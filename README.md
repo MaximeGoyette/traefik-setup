@@ -14,4 +14,4 @@ sudo apt-get install apache2-utils
 htpasswd -nb admin secure_password
 ```
 
-3. Added password and email to `traefik.toml`
+3. Add password and email to `traefik.toml`
