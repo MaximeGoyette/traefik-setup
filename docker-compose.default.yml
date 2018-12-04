@@ -17,7 +17,7 @@ services:
     container_name: "traefik"
     labels:
       - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:monitor.example.com"
+      - "traefik.frontend.rule=Host:monitor.example.com" # <-- set front-end rule for the Traefik dashboard
       - "traefik.port=8080"
       - "traefik.protocol=http"
 
