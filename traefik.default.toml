@@ -1,20 +1,22 @@
 defaultEntryPoints = ["http", "https"]
+
 [web]
 address = ":8080"
   [web.auth.basic]
-  users = [""]
+  users = [""] # <-- set user(s) credentials
+
 [entryPoints]
   [entryPoints.http]
   address = ":80"
     [entryPoints.http.redirect]
-      entryPoint = "https"
+    entryPoint = "https"
     [entryPoints.https]
     address = ":443"
       [entryPoints.https.tls]
 
 [acme]
 caServer = "https://acme-v02.api.letsencrypt.org/directory"
-email = ""
+email = "" # <-- set email address
 storage = "acme.json"
 entryPoint = "https"
 onHostRule = true
