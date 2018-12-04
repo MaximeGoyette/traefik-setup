@@ -15,3 +15,5 @@ htpasswd -nb admin secure_password
 ```
 
 3. Add password and email to `traefik.toml`
+
+4. Set the front-end rule for the Traefik dashboard in `docker-compose.yml`.
