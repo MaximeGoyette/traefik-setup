@@ -35,3 +35,8 @@ nano docker-compose.yml
 ```bash
 sudo docker network create proxy
 ```
+
+6. Start Traefik container
+```bash
+sudo docker-compose up -d
+```
